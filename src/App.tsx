@@ -89,9 +89,9 @@ const App: FC<AppProps> = ({ title }) => {
   useEffect(() => {
     fetchArticleData();
   }, [])
-  return <div>
+  return <div className="landing">
     <h2>Search News</h2>
-    <div>
+    <div className="filters">
       <input
         type="text"
         value={query}
@@ -116,7 +116,7 @@ const App: FC<AppProps> = ({ title }) => {
 
     {error && <p style={{ color: "red" }}>Error: {error}</p>}
 
-    <h1>{title}</h1>
+    <h2>{title}</h2>
     <ul>
       {articles.map((item) => {
         return (

@@ -6,3 +6,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.landing {
+  margin: 20px;
+}
+.landing .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.landing .filters input,
+.landing .filters select,
+.landing .filters button {
+  flex: 1 1 25%;
+}
+.landing ul li {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .landing .filters input,
+  .landing .filters select,
+  .landing .filters button  {
+    flex: 1 1 50%;
+  }
+}
