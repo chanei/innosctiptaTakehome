@@ -4,6 +4,8 @@ Displays a list of articles from different APIs based on given filtering paramet
 
 ## Execution
 
+After cloning the project, make sure to create an env file locally and copy the variables from .env.example and fill their values respectively
+
 The project is executed using docker and here is how it is run and accessed:
 - ```docker compose up --build```
 
